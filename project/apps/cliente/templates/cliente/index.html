@@ -1,5 +1,13 @@
+{% extends 'Home/base.html' %}
+
+{% block TITULO %}
+    Bienvenido a la pagina cliente
+{% endblock TITULO %}
+
+{% block CONTENIDO %}
 
     {% for cliente in clientes %}
+
         <h2>{{ cliente.nombre }}</h2>
         <p>{{ cliente.apellido }}</p>
         <p>{{ cliente.documento }}</p>
@@ -7,3 +15,7 @@
         <p>{{ cliente.vehiculo_id }}</p>
 
     {% endfor %}
+
+{% endblock CONTENIDO %}
+
+
