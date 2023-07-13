@@ -5,19 +5,23 @@
 {% endblock TITULO %}
 
 {% block CONTENIDO %}
-
+ 
     {% for cliente in clientes %}
 
-        <h2>{{ cliente.nombre }}</h2>
-        <p>{{ cliente.apellido }}</p>
-        <p>{{ cliente.documento }}</p>
-        <p>{{ cliente.nacimiento }}</p>
-        <p>{{ cliente.vehiculo_id }}</p>
+        {{ cliente.nombre }}
+        <br>
+        {{ cliente.apellido }}
+        <br>
+        {{ cliente.documento }}
+        <br>
+        {{ cliente.nacimiento }}
+        <br>
+        {{ cliente.vehiculo_id }}
 
     {% endfor %}
+
+    <br>
 
     <a href="{% url 'Home:home' %}">Ir al menú principal</a>
 
 {% endblock CONTENIDO %}
-
-
