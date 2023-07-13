@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import sys
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -17,7 +18,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #! sys.path es una lista de rutas donde Python busca  módulos para importar
 #! servirá para poder importar las aplicaciones de la carpeta apps
-import sys
 APPS_DIR = BASE_DIR / "apps"
 sys.path.append(str(APPS_DIR))
 
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Home',
-    'vehiculo',
     'cliente',
 ]
 
