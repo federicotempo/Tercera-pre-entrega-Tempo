@@ -19,5 +19,6 @@ from django.urls import path, include #! include sirve para traer urls de las ap
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("cliente.urls")), 
+    path('', include("cliente.urls")),
+    path('vehiculo/', include("vehiculo.urls")),
 ]
